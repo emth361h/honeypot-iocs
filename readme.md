@@ -17,19 +17,19 @@ type,value,category,source,first_seen,last_seen,hits,detail
 
 - **type**: `ip` / `url` / `sha256`
 - **category**:
-  - `ssh-bruteforce` — credential attacks against SSH
-  - `ssh-post-auth` — executed commands after successful login (high-confidence malicious)
-  - `ssh-malware-drop` — uploaded/downloaded binaries (highest confidence)
-  - `ssh-probe` — connection-only scanning
-  - `http-scan` — web vulnerability scanning
-  - `decoy-harvester` — collected planted decoy credentials/config files
-  - `payload-url` (urls) — malware distribution URLs observed in commands
-  - `malware-sample` (sha256) — captured binary hashes
-  - `research-scanner` — known internet measurement orgs (Censys, ONYPHE, Bitsight, ...). Listed for transparency; **blocking these is not necessarily recommended**.
+  - `ssh-bruteforce`  Ecredential attacks against SSH
+  - `ssh-post-auth`  Eexecuted commands after successful login (high-confidence malicious)
+  - `ssh-malware-drop`  Euploaded/downloaded binaries (highest confidence)
+  - `ssh-probe`  Econnection-only scanning
+  - `http-scan`  Eweb vulnerability scanning
+  - `decoy-harvester`  Ecollected planted decoy credentials/config files
+  - `payload-url` (urls)  Emalware distribution URLs observed in commands
+  - `malware-sample` (sha256)  Ecaptured binary hashes
+  - `research-scanner`  Eknown internet measurement orgs (Censys, ONYPHE, Bitsight, ...). Listed for transparency; **blocking these is not necessarily recommended**.
 
 ## Notes & Disclaimer
 
-- IPs may belong to shared hosting, proxies, or compromised machines — treat as "observed attacking", not as attribution.
+- IPs may belong to shared hosting, proxies, or compromised machines  Etreat as "observed attacking", not as attribution.
 - User-generated / university network ranges and the honeypot's own address are excluded.
 - Data: [CC0](https://creativecommons.org/publicdomain/zero/1.0/). Code in this repo: MIT.
 - Provided as-is for defensive research. No warranty.
@@ -37,5 +37,6 @@ type,value,category,source,first_seen,last_seen,hits,detail
 ## Stats
 
 <!-- STATS-START -->
-(updated automatically on push)
+2026-09-11 13:46 ? 207 indicators (202 IPs)
 <!-- STATS-END -->
+
