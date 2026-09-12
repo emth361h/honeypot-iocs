@@ -37,7 +37,8 @@ type,value,category,source,first_seen,last_seen,hits,detail
 ## Stats
 
 <!-- STATS-START -->
-2026-09-11 20:33 ? 272 indicators (265 IPs) ? NEW: PAM-backdoor sshd + fail2ban-lockdown miner package
+2026-09-12 11:01 ? 311 indicators (303 IPs)
 <!-- STATS-END -->
+
 
 
