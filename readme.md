@@ -37,11 +37,9 @@ type,value,category,source,first_seen,last_seen,hits,detail
 ## Stats
 
 <!-- STATS-START -->
-- Last updated: 2026-09-12 UTC
-- Unique IPs: 409 | Payload URLs: 8 | Malware hashes: 10
-- Categories (IP may overlap): ssh-probe 271 / http-scan 131 / ssh-bruteforce 90 / ssh-post-auth 32 / decoy-harvester 18 / research-scanner 5 / ssh-malware-drop 4
-- Notable: DIICOT-family toolkit (spreader+deployer+miner+key implants), BillGates-family DDoS bot (kal64), handshakebins.sh multi-binary loader
+2026-09-15 11:07 ? 640 indicators (617 IPs)
 <!-- STATS-END -->
+
 
 
 
