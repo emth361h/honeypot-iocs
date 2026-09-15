@@ -12,7 +12,7 @@ ip,109.160.32.20,ssh-bruteforce/ssh-probe,ssh,2026-09-10T11:14:44,2026-09-10T12:
 ip,109.160.32.120,ssh-bruteforce/ssh-probe,ssh,2026-09-11T02:22:56,2026-09-11T03:07:46,1001,
 ip,109.160.32.43,ssh-bruteforce/ssh-probe,ssh,2026-09-11T16:55:49,2026-09-11T17:36:32,1001,
 ip,109.160.32.104,ssh-bruteforce/ssh-probe,ssh,2026-09-11T21:40:56,2026-09-11T22:33:39,1001,
-ip,62.171.133.1,ssh-bruteforce/ssh-malware-drop/ssh-post-auth/ssh-probe,ssh,2026-09-10T09:39:07,2026-09-15T01:30:09,934,
+ip,62.171.133.1,ssh-bruteforce/ssh-malware-drop/ssh-post-auth/ssh-probe,ssh,2026-09-10T09:39:07,2026-09-15T02:09:34,938,
 ip,109.160.32.36,ssh-bruteforce/ssh-probe,ssh,2026-09-10T20:32:38,2026-09-10T21:31:32,933,
 ip,102.220.161.87,decoy-harvester/http-scan,http,2026-09-14T03:31:41,2026-09-14T03:48:10,514,
 ip,154.18.197.29,ssh-bruteforce/ssh-post-auth/ssh-probe,ssh,2026-09-10T04:41:55,2026-09-10T08:17:53,459,
@@ -37,8 +37,8 @@ ip,49.235.98.218,ssh-bruteforce/ssh-probe,ssh,2026-09-10T16:11:55,2026-09-10T18:
 ip,80.94.92.234,ssh-bruteforce/ssh-post-auth/ssh-probe,ssh,2026-09-11T14:38:32,2026-09-14T02:49:56,178,
 ip,195.178.110.227,ssh-bruteforce/ssh-post-auth/ssh-probe,ssh,2026-09-13T16:31:11,2026-09-13T17:37:42,173,
 ip,54.74.13.161,decoy-harvester/http-scan/ssh-probe,http+ssh,2026-09-12T17:27:40,2026-09-14T10:04:46,169,
+ip,139.19.117.197,ssh-bruteforce/ssh-probe,ssh,2026-09-12T08:10:44,2026-09-15T02:12:05,165,
 ip,92.118.39.50,ssh-bruteforce/ssh-probe,ssh,2026-09-10T20:53:04,2026-09-14T20:43:05,165,
-ip,139.19.117.197,ssh-bruteforce/ssh-probe,ssh,2026-09-12T08:10:44,2026-09-15T01:12:05,163,
 ip,2.57.121.25,ssh-bruteforce/ssh-probe,ssh,2026-09-10T04:42:37,2026-09-15T00:26:42,158,
 ip,92.118.39.71,ssh-bruteforce/ssh-probe,ssh,2026-09-11T20:30:35,2026-09-12T08:49:45,144,
 ip,2.57.122.168,ssh-bruteforce/ssh-malware-drop/ssh-post-auth/ssh-probe,ssh,2026-09-10T07:56:14,2026-09-13T19:36:01,141,
@@ -634,8 +634,8 @@ sha256,0ff23a77abba239a50412c720b2e423fcb3fb00e2362189cafa116eeb9bdce27,malware-
 sha256,b02337d82c44ed46e5b186bd54cde717be39da81a29fb332090d10a5c444ccb6,malware-sample,cowrie/evidence,2026-09-13T04:48:02,2026-09-13T04:48:02,1,var/downloads/b02337d82c44ed46e5b186bd54cde717be39da81a29fb3
 sha256,6fddaa099096c0caee183e4bb95e9fe79003e6ae6dc41d6b1aa3b4aec221bd38,malware-sample,cowrie/evidence,2026-09-13T04:53:10,2026-09-13T04:53:10,1,var/downloads/6fddaa099096c0caee183e4bb95e9fe79003e6ae6dc41d
 sha256,94f2e4d8d4436874785cd14e6e6d403507b8750852f7f2040352069a75da4c00,malware-sample,cowrie/evidence,2026-09-13T19:46:28,2026-09-13T19:46:28,1,var/downloads/94f2e4d8d4436874785cd14e6e6d403507b8750852f7f2
-sha256,bdb1c596e0ea651d763bde66937d4061fcd50b4865827765552df8dd7dddddf6,malware-sample,cowrie/evidence,2026-09-15T02:06:03,2026-09-15T02:06:03,1,evidence/colony-0700_root_.bashrc
-sha256,fccbb54155bf5a958392b73712f78dd370f6d19400c34b3e6d6cc9ac1702ad27,malware-sample,cowrie/evidence,2026-09-15T02:06:03,2026-09-15T02:06:03,1,evidence/evidence-X0lock-113134
-sha256,4c4543b1963b22fb4bdd039558c6f8ea913ada5c61f1b36637318804dec9f322,malware-sample,cowrie/evidence,2026-09-15T02:06:03,2026-09-15T02:06:03,1,evidence/miner-X0lock.bin
-sha256,3284757febef84f4dcb5e9bd71dacf850e6dbf218a0fea0b1b0b298e0189947a,malware-sample,cowrie/evidence,2026-09-15T02:06:03,2026-09-15T02:06:03,1,evidence/authorized_keys-elpatrono1337-234640
-sha256,54cedfac81f450451263575592fa47957063c699ecc989747bef19de6b88174d,malware-sample,cowrie/evidence,2026-09-15T02:06:03,2026-09-15T02:06:03,1,evidence/evidence-dotdir-113134.txt
+sha256,bdb1c596e0ea651d763bde66937d4061fcd50b4865827765552df8dd7dddddf6,malware-sample,cowrie/evidence,2026-09-15T02:16:40,2026-09-15T02:16:40,1,evidence/colony-0700_root_.bashrc
+sha256,fccbb54155bf5a958392b73712f78dd370f6d19400c34b3e6d6cc9ac1702ad27,malware-sample,cowrie/evidence,2026-09-15T02:16:40,2026-09-15T02:16:40,1,evidence/evidence-X0lock-113134
+sha256,4c4543b1963b22fb4bdd039558c6f8ea913ada5c61f1b36637318804dec9f322,malware-sample,cowrie/evidence,2026-09-15T02:16:40,2026-09-15T02:16:40,1,evidence/miner-X0lock.bin
+sha256,3284757febef84f4dcb5e9bd71dacf850e6dbf218a0fea0b1b0b298e0189947a,malware-sample,cowrie/evidence,2026-09-15T02:16:40,2026-09-15T02:16:40,1,evidence/authorized_keys-elpatrono1337-234640
+sha256,54cedfac81f450451263575592fa47957063c699ecc989747bef19de6b88174d,malware-sample,cowrie/evidence,2026-09-15T02:16:40,2026-09-15T02:16:40,1,evidence/evidence-dotdir-113134.txt
