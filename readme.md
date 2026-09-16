@@ -37,8 +37,9 @@ type,value,category,source,first_seen,last_seen,hits,detail
 ## Stats
 
 <!-- STATS-START -->
-2026-09-15 11:07 ? 640 indicators (617 IPs)
+2026-09-16 14:49 ? 585 indicators (561 IPs)
 <!-- STATS-END -->
+
 
 
 
