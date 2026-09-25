@@ -1,0 +1,16 @@
+{
+  "_comment": "既知の研究・計測スキャナ。basis階層: official=公式公開docに裏付けられたrange / verified=複数の独立した公開情報で裏付け / heuristic=推測ベース。event_type=research-scannerへの強制分類とblocklist-high.txtからの除外は official と verified のみに適用される (heuristicは安全側=通常扱い)。",
+  "entries": [
+    {"prefix": "66.132.172.138", "org": "Censys", "basis": "official", "source": "https://docs.censys.com/docs/faq"},
+    {"prefix": "162.142.125.", "org": "University of Michigan (Internet Scanner)", "basis": "official", "source": "https://researchers.scans.io"},
+    {"prefix": "171.25.193.", "org": "ONYPHE", "basis": "official", "source": "https://www.onyphe.io/docs/ips"},
+    {"prefix": "45.156.128.", "org": "Bitsight (AS211680)", "basis": "official", "source": "https://www.bitsight.com"},
+    {"prefix": "2620:11c:f00:400::138", "org": "Censys", "basis": "official", "source": "https://docs.censys.com/docs/faq"},
+    {"prefix": "185.244.25.", "org": "PAN-WORLD / measurement", "basis": "verified", "source": "public scanner lists"},
+    {"prefix": "20.42.65.", "org": "Microsoft (Azure scanner ranges)", "basis": "verified", "source": "public scanner lists"},
+    {"prefix": "54.76.45.192", "org": "Wiz MCP scanner", "basis": "verified", "source": "https://www.wiz.io/blog"},
+    {"prefix": "64.62.156.", "org": "Hurricane Electric / measurement-adjacent", "basis": "heuristic", "source": "public scanner lists"},
+    {"prefix": "184.105.139.", "org": "scanning (AS6939 adjacent)", "basis": "heuristic", "source": "public scanner lists"},
+    {"prefix": "104.152.52.", "org": "Driftnet / measurement", "basis": "heuristic", "source": "public scanner lists"}
+  ]
+}

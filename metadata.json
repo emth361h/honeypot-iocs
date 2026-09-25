@@ -1,0 +1,23 @@
+{
+  "active": 647,
+  "by_event_type": {
+    "decoy-harvester": 6,
+    "http-scan": 146,
+    "payload-url": 20,
+    "research-scanner": 1,
+    "ssh-bruteforce": 74,
+    "ssh-malware-drop": 7,
+    "ssh-post-auth": 202,
+    "ssh-probe": 502,
+    "unknown-artifact": 6
+  },
+  "expired": 317,
+  "indicators": 964,
+  "ipv4": 938,
+  "ipv6": 0,
+  "schema": "v2",
+  "sha256": 6,
+  "stale": 0,
+  "updated": "2026-09-25T00:00:00Z",
+  "url": 20
+}

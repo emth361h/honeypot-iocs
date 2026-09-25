@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+# legacy single-file export (v2 commits observations/YYYY/MM/DD.jsonl)
+raw/events.jsonl
+# 生テレメトリ (集約後の観測のみ公開。VM/ローカルのrawは管理外)
+raw/
+# 内部処理用中間データ (enrich用全列。Actionsの実行毎に再生成)
+internal/
+# 外部APIから再生成可能なcache (Actions cacheで持ち回す。commitしない)
+enrich-cache.json
+ti-cache.json
+# private環境設定
+*.env
+!.env.example
