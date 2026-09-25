@@ -32,8 +32,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: enrich-cache.json
-          key: ioc-enrich-v1
-          restore-keys: ioc-enrich-
+          key: ioc-enrich-v1-${{ github.run_id }}
+          restore-keys: |
+            ioc-enrich-v1-
 
       - name: Generate feeds (pass 1 - build internal table)
         run: python3 scripts/generate_feeds.py
