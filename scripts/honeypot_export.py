@@ -15,6 +15,9 @@ timestamp / コマンド本文 / login成否のイベント列) は一切出力�
   HONEYPOT_EXCLUDE_NETS  カンマ区切り。除外network (未設定ならloopback/RFC1918のみ)
   HONEYPOT_DECOY_CONFIG  decoy判定keywordのjson (未設定ならdecoy判定なし=全てrequest)
     例: /etc/honeypot-iocs/decoy-patterns.json  {"keywords": [".env", ...]}
+  HONEYPOT_EVIDENCE_DIR  証拠ディレクトリ (ファイル名 YYMMDD-HHMMSS-hash16-… の
+                         完全補㕌Eルをsha256集約に統合。index.logのPARTICAL-ELFは除外)
+  HONEYPOT_HASH_CACHE    証拠ハッシュcache path (size+mtimeキーで再計算回避)
 
 使い方:
   python3 scripts/honeypot_export.py --cowrie $COWRIE_LOG --captures $CAPTURES_LOG \
@@ -135,17 +138,78 @@ def scan_captures(paths, day, ip_hits):
                 ip_hits[(ip, etype)] += 1
 
 
+# --- 証拠ディレクトリ (完全捕獲サンプルのsha256統合) --------------------------
+EV_NAME_RE = __import__("re").compile(r"^(\d{6})-\d{6}-([0-9a-f]{12,16})-")
+PARTIAL_RE = __import__("re").compile(r"FILE\s+\S+\s+\d+\s+([0-9a-f]{12,16})\s+PARTIAL-ELF")
+
+
+def scan_evidence(evdir, day, hashes, cache_path):
+    """autograb形式の証拠から完全捕獲ファイルのsha256を集約。day外・PARTIAL・ELF断片は除外"""
+    import hashlib
+    root = Path(evdir)
+    if not root.is_dir():
+        print(f"WARN: 証拠dir不在: {evdir}", file=sys.stderr)
+        return
+    partial12 = set()
+    idx = root / "index.log"
+    if idx.exists():
+        for line in idx.read_text(errors="ignore").splitlines():
+            m = PARTIAL_RE.search(line)
+            if m:
+                partial12.add(m.group(1)[:12])
+    try:
+        cache = json.load(open(cache_path, encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        cache = {}
+    dirty = False
+    for f in sorted(root.iterdir()):
+        m = EV_NAME_RE.match(f.name)
+        if not m or not f.is_file():
+            continue
+        ymd, h = m.group(1), m.group(2)
+        evday = f"20{ymd[:2]}-{ymd[2:4]}-{ymd[4:6]}"
+        if evday != day or h[:12] in partial12:
+            continue
+        try:
+            st = f.stat()
+        except OSError:
+            continue
+        key = f"{st.st_size}:{st.st_mtime_ns}"
+        c = cache.get(f.name)
+        if not c or c.get("k") != key:
+            h = hashlib.sha256()
+            with open(f, "rb") as fh:
+                for chunk in iter(lambda: fh.read(1 << 20), b""):
+                    h.update(chunk)
+            c = {"k": key, "sha256": h.hexdigest()}
+            cache[f.name] = c
+            dirty = True
+        sha = c["sha256"]
+        if sha != EMPTY_SHA:
+            hashes[(sha, st.st_size)] += 1
+    if dirty:
+        try:
+            cp = Path(cache_path)
+            cp.parent.mkdir(parents=True, exist_ok=True)
+            json.dump(cache, open(cp, "w", encoding="utf-8"))
+        except OSError as e:
+            print(f"WARN: hash cache書込失敗: {e}", file=sys.stderr)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cowrie", default=None, help="cowrie.json path (env COWRIE_LOGも可)")
     ap.add_argument("--captures", default=None, help="captures.jsonl path (env CAPTURES_LOGも可)")
+    ap.add_argument("--evidence", default=None,
+                    help="証拠ディレクトリ (env HONEYPOT_EVIDENCE_DIRも可) 未指定なら統合なし")
     ap.add_argument("--out", default="observations", help="出力ルート")
     ap.add_argument("--date", default=None, help="対象日 YYYY-MM-DD (default: 今日UTC)")
     a = ap.parse_args()
     cowrie = a.cowrie or os.environ.get("COWRIE_LOG")
     captures = a.captures or os.environ.get("CAPTURES_LOG")
-    if not cowrie and not captures:
-        ap.error("--cowrie/--captures (または COWRIE_LOG/CAPTURES_LOG) が必要")
+    evidence = a.evidence or os.environ.get("HONEYPOT_EVIDENCE_DIR")
+    if not cowrie and not captures and not evidence:
+        ap.error("--cowrie/--captures/--evidence (または各env) が必要")
     day = a.date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     ip_hits, urls, hashes = defaultdict(int), defaultdict(int), defaultdict(int)
@@ -155,6 +219,10 @@ def main():
     if captures:
         files = [captures] + sorted(glob.glob(captures + ".*"))
         scan_captures([f for f in files if os.path.exists(f)], day, ip_hits)
+    if evidence:
+        cache_path = os.environ.get("HONEYPOT_HASH_CACHE") or os.path.join(
+            os.path.expanduser("~/.cache"), "honeypot-iocs-evidence.json")
+        scan_evidence(evidence, day, hashes, cache_path)
 
     records = []
     for (ip, etype), n in ip_hits.items():
