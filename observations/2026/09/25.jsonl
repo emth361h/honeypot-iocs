@@ -2,6 +2,8 @@
 {"day": "2026-09-25", "event_type": "ssh-bruteforce", "hits": 5, "ip": "139.19.117.197", "kind": "ip"}
 {"day": "2026-09-25", "event_type": "http-scan", "hits": 1, "ip": "15.206.245.0", "kind": "ip"}
 {"day": "2026-09-25", "event_type": "http-scan", "hits": 2, "ip": "156.225.1.64", "kind": "ip"}
+{"day": "2026-09-25", "event_type": "http-scan", "hits": 2, "ip": "161.35.157.225", "kind": "ip"}
+{"day": "2026-09-25", "event_type": "http-scan", "hits": 2, "ip": "164.90.202.79", "kind": "ip"}
 {"day": "2026-09-25", "event_type": "ssh-probe", "hits": 1, "ip": "181.209.78.186", "kind": "ip"}
 {"day": "2026-09-25", "event_type": "http-scan", "hits": 1, "ip": "20.65.202.18", "kind": "ip"}
 {"day": "2026-09-25", "event_type": "ssh-probe", "hits": 1, "ip": "23.94.28.169", "kind": "ip"}
