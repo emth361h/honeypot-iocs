@@ -408,6 +408,8 @@ http://213.232.114.14/handshakebins.sh,url,payload-url,high,80,active,2026-09-12
 157.100.53.93,ip,ssh-probe,low,20,expired,2026-09-13,2026-09-13,2,52468,"AS52468 - UFINET PANAMA S.A., PA",EC,
 157.230.1.248,ip,ssh-probe,low,20,expired,2026-09-10,2026-09-10,2,14061,"DIGITALOCEAN-ASN - DigitalOcean, LLC, US",US,
 157.230.103.116,ip,http-scan,low,30,active,2026-09-24,2026-09-24,2,14061,"DIGITALOCEAN-ASN - DigitalOcean, LLC, US",US,
+161.35.157.225,ip,http-scan,low,30,active,2026-09-25,2026-09-25,2,14061,"DIGITALOCEAN-ASN - DigitalOcean, LLC, US",US,
+164.90.202.79,ip,http-scan,low,30,active,2026-09-25,2026-09-25,2,14061,"DIGITALOCEAN-ASN - DigitalOcean, LLC, US",US,
 165.50.15.18,ip,ssh-probe,low,20,expired,2026-09-14,2026-09-14,2,37492,"Orange Tunisie - Orange Tunisie, TN",TN,
 165.73.180.146,ip,ssh-probe,low,20,expired,2026-09-13,2026-09-13,2,328471,"HERO TELECOMS (PTY) LTD - HERO TELECOMS (PTY) LTD, ZA",ZA,
 167.94.146.54,ip,ssh-probe,low,20,active,2026-09-24,2026-09-24,2,398705,"CENSYS-ARIN-02 - Censys, Inc., US",US,

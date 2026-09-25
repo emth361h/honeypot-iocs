@@ -1,8 +1,8 @@
 {
-  "active": 647,
+  "active": 649,
   "by_event_type": {
     "decoy-harvester": 6,
-    "http-scan": 146,
+    "http-scan": 148,
     "payload-url": 20,
     "research-scanner": 1,
     "ssh-bruteforce": 74,
@@ -12,8 +12,8 @@
     "unknown-artifact": 6
   },
   "expired": 317,
-  "indicators": 964,
-  "ipv4": 938,
+  "indicators": 966,
+  "ipv4": 940,
   "ipv6": 0,
   "schema": "v2",
   "sha256": 6,

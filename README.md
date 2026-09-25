@@ -12,8 +12,8 @@ Indicators of compromise observed on a self-hosted, internet-facing honeypot
 <!-- AUTO-STATS:START -->
 Updated: 2026-09-25T00:00:00Z
 
-- Indicators: **964** (IPv4 938, IPv6 0, URL 20, SHA256 6)
-- Status: 647 active / 0 stale / 317 expired
+- Indicators: **966** (IPv4 940, IPv6 0, URL 20, SHA256 6)
+- Status: 649 active / 0 stale / 317 expired
 - High-confidence blocklist (`feeds/blocklist-high.txt`): 222 entries
 - Research scanners (separate list, do **not** block): 1
 
@@ -23,7 +23,7 @@ Updated: 2026-09-25T00:00:00Z
 |---|---|---|---|---|
 | ssh-probe | 502 | low | 20 | 7 |
 | ssh-post-auth | 202 | high | 90 | 90 |
-| http-scan | 146 | low | 30 | 14 |
+| http-scan | 148 | low | 30 | 14 |
 | ssh-bruteforce | 74 | medium | 60 | 30 |
 | payload-url | 20 | high | 80 | 90 |
 | ssh-malware-drop | 7 | critical | 100 | 180 |

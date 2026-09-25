@@ -408,6 +408,8 @@ ip,156.227.234.198,ssh-bruteforce,ssh,2026-09-11,2026-09-11,2,ssh-bruteforce
 ip,157.100.53.93,ssh-probe,ssh,2026-09-13,2026-09-13,2,ssh-probe
 ip,157.230.1.248,ssh-probe,ssh,2026-09-10,2026-09-10,2,ssh-probe
 ip,157.230.103.116,http-scan,ssh,2026-09-24,2026-09-24,2,http-scan
+ip,161.35.157.225,http-scan,ssh,2026-09-25,2026-09-25,2,http-scan
+ip,164.90.202.79,http-scan,ssh,2026-09-25,2026-09-25,2,http-scan
 ip,165.50.15.18,ssh-probe,ssh,2026-09-14,2026-09-14,2,ssh-probe
 ip,165.73.180.146,ssh-probe,ssh,2026-09-13,2026-09-13,2,ssh-probe
 ip,167.94.146.54,ssh-probe,ssh,2026-09-24,2026-09-24,2,ssh-probe
