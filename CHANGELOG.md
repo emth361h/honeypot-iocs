@@ -2,6 +2,10 @@
 
 Generated automatically from feed rebuilds. Newest first.
 
+## 2026-09-27
+
++156 IPv4/v6, +284 SHA256, +1 reactivated
+
 ## 2026-09-26
 
 +142 IPv4/v6, +1 URLs, +256 SHA256, +3 reactivated
