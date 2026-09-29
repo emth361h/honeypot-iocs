@@ -4221,3 +4221,15 @@ sha256,ffd491252a3fbe057f2bfe4a01ae348276dbd4b639421a1608195437f1f52225,unknown-
 sha256,ffe04bc05a56f78b1273876cf17ded8df1aa3da5a15deb17dce99a3e206eb705,unknown-artifact,cowrie/evidence,2026-09-14,2026-09-14,1,unknown-artifact
 sha256,ffeaae6e8438ced5ba8b4cf607243c9e181b7ce426657054f61173952a5265f9,unknown-artifact,cowrie/evidence,2026-09-16,2026-09-16,1,unknown-artifact
 sha256,fffeb90fccd2556ae66a6b9bfed8fa45975606bed9489e14690c6145a4b687dd,unknown-artifact,cowrie/evidence,2026-09-26,2026-09-26,1,unknown-artifact
+url,http://83.168.69.95/aarch64,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/armv4l,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/armv5l,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/armv6l,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/armv7l,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/i486,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/m68k,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/mips,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/mipsel,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/mipsrouter,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/powerpc,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url
+url,http://83.168.69.95/x86_64,payload-url,ssh-command,2026-09-27,2026-09-27,1,payload-url

@@ -2,6 +2,10 @@
 
 Generated automatically from feed rebuilds. Newest first.
 
+## 2026-09-29
+
++12 URLs, +50 reactivated
+
 ## 2026-09-28
 
 -50 expired

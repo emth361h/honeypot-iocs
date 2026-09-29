@@ -1,8 +1,8 @@
 {
-  "active": 3391,
+  "active": 3466,
   "by_event_type": {
     "http-scan": 557,
-    "payload-url": 22,
+    "payload-url": 34,
     "research-scanner": 9,
     "ssh-bruteforce": 44,
     "ssh-malware-drop": 5,
@@ -10,13 +10,13 @@
     "ssh-probe": 778,
     "unknown-artifact": 2423
   },
-  "expired": 470,
-  "indicators": 4222,
+  "expired": 420,
+  "indicators": 4234,
   "ipv4": 1777,
   "ipv6": 0,
   "schema": "v2",
   "sha256": 2423,
-  "stale": 361,
-  "updated": "2026-09-28T23:59:59Z",
-  "url": 22
+  "stale": 348,
+  "updated": "2026-09-28T00:00:00Z",
+  "url": 34
 }

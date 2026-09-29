@@ -398,5 +398,17 @@ http://45.88.91.135:35146/s/kal64
 http://45.88.91.135:35146/s/kswpad
 http://5.189.149.171/f/b/m/.16_
 http://5.189.149.171/f/brute/m/.16_
+http://83.168.69.95/aarch64
+http://83.168.69.95/armv4l
+http://83.168.69.95/armv5l
+http://83.168.69.95/armv6l
+http://83.168.69.95/armv7l
 http://83.168.69.95/hggseiqwekf.sh
+http://83.168.69.95/i486
+http://83.168.69.95/m68k
+http://83.168.69.95/mips
+http://83.168.69.95/mipsel
+http://83.168.69.95/mipsrouter
+http://83.168.69.95/powerpc
+http://83.168.69.95/x86_64
 https://brightdata.com/static/earnapp/install.sh
