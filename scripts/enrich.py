@@ -150,12 +150,16 @@ TI_CHECKERS = {  # (type) -> func; env key必須のものは内部で判定
     "sha256": [("malwarebazaar", ti_check_malwarebazaar)],
 }
 
-def run_ti(indicator: str, type_: str, ti_cache: dict, fetch=None) -> dict:
-    """1指標分のTI照会+cache更新。{sources, malicious, family} を返す。"""
+def run_ti(indicator: str, type_: str, ti_cache: dict, fetch=None, stats=None) -> dict:
+    """1指標分のTI照会+cache更新。{sources, malicious, family} を返す。
+    ネガティブ結果 (unknown/error) もTTL付きでcacheして再照会を防ぐ。
+    stats={"attempts": int} を渡すと実照会回数を数える (rate上限用)。"""
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     c = ti_cache.get(indicator)
     if c and now < c.get("expires", ""):
         return c
+    if stats is not None:
+        stats["attempts"] = stats.get("attempts", 0) + 1
     sources, malicious, fam = [], 0, None
     for name, fn in TI_CHECKERS.get(type_, []):
         r = fn(indicator)
@@ -170,8 +174,7 @@ def run_ti(indicator: str, type_: str, ti_cache: dict, fetch=None) -> dict:
     out = {"sources": sources, "malicious": malicious, "family": fam,
            "expires": (datetime.now(timezone.utc) + timedelta(days=TI_TTL_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ"),
            "checked": now}
-    if sources:
-        ti_cache[indicator] = out
+    ti_cache[indicator] = out  # 成果の有無に関わらずcache (unknown再照会防止)
     return out
 
 # ---------------- main --------------------------------------------------------
@@ -227,13 +230,12 @@ def main():
         # 優先度: malware-drop/post-auth/sha256/url → それ以外
         prio = {"sha256": 0, "url": 1, "ip": 2}
         ti_rows.sort(key=lambda r: (prio.get(r["type"], 3), -int(r["hits"] or 1)))
-        done = 0
+        stats = {"attempts": 0}
         for r in ti_rows:
-            if done >= a.max:
+            if stats["attempts"] >= a.max:
                 break
-            res = run_ti(r["indicator"], r["type"], ti_cache)
+            res = run_ti(r["indicator"], r["type"], ti_cache, stats=stats)
             if res.get("sources"):
-                done += 1
                 r["external_sources"] = ",".join(res["sources"])
                 r["external_malicious"] = str(res["malicious"])
                 r["external_confidence"] = str(round(100 * res["malicious"] / len(res["sources"])))
