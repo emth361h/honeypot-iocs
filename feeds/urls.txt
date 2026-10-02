@@ -1,10 +1,10 @@
 http://5.189.149.171/f/brute/m/.16_
 http://5.189.149.171/f/b/m/.16_
 http://83.168.69.95/hggseiqwekf.sh
-https://brightdata.com/static/earnapp/install.sh
 http://130.12.182.19/f/m/.b0s_x86_64
-http://192.227.210.190/dred
 http://213.232.114.14/handshakebins.sh
+https://brightdata.com/static/earnapp/install.sh
+http://192.227.210.190/dred
 http://213.232.114.14/nokillbins/handshakebins.sh
 http://194.59.30.147:15653/s/amd64
 http://194.59.30.147:15653/s/kal64
