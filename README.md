@@ -10,10 +10,10 @@ Indicators of compromise observed on a self-hosted, internet-facing honeypot
 ## Current stats
 
 <!-- AUTO-STATS:START -->
-Updated: 2026-10-02T00:00:00Z
+Updated: 2026-10-02T23:59:59Z
 
 - Indicators: **5853** (IPv4 2628, IPv6 0, URL 35, SHA256 3190)
-- Status: 4747 active / 410 stale / 696 expired
+- Status: 4603 active / 506 stale / 744 expired
 - High-confidence blocklist (`feeds/blocklist-high.txt`): 671 entries
 - Research scanners (separate list, do **not** block): 10
 
