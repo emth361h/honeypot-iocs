@@ -29,6 +29,7 @@ http://31.56.209.73:65161/b/amd64
 http://31.56.209.73:65161/b/kal64
 http://31.56.209.73:65161/b/kswpad
 http://www.google.com/setup.sh
+https://217.60.102.5/sh
 http://193.161.193.99:53112/w.sh
 http://83.168.69.95/aarch64
 http://83.168.69.95/armv4l
@@ -42,4 +43,3 @@ http://83.168.69.95/mipsel
 http://83.168.69.95/mipsrouter
 http://83.168.69.95/powerpc
 http://83.168.69.95/x86_64
-https://217.60.102.5/sh
