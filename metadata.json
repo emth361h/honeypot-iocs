@@ -1,5 +1,5 @@
 {
-  "active": 7161,
+  "active": 7081,
   "by_event_type": {
     "http-scan": 1425,
     "payload-url": 48,
@@ -10,13 +10,13 @@
     "ssh-probe": 1546,
     "unknown-artifact": 5138
   },
-  "expired": 1556,
+  "expired": 1626,
   "indicators": 9443,
   "ipv4": 4257,
   "ipv6": 0,
   "schema": "v2",
   "sha256": 5138,
-  "stale": 726,
-  "updated": "2026-10-12T00:00:00Z",
+  "stale": 736,
+  "updated": "2026-10-12T23:59:59Z",
   "url": 48
 }
