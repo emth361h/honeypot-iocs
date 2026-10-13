@@ -4,7 +4,7 @@ Generated automatically from feed rebuilds. Newest first.
 
 ## 2026-10-13
 
-+155 IPv4/v6, +3 URLs, +32 SHA256, +25 reactivated
+-129 expired
 
 ## 2026-10-12
 
