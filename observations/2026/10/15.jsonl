@@ -319,7 +319,6 @@
 {"day": "2026-10-15", "event_type": "ssh-probe", "hits": 2, "ip": "123.143.12.102", "kind": "ip"}
 {"day": "2026-10-15", "event_type": "ssh-post-auth", "hits": 12, "ip": "123.143.12.102", "kind": "ip"}
 {"day": "2026-10-15", "event_type": "ssh-probe", "hits": 1, "ip": "124.122.141.236", "kind": "ip"}
-{"day": "2026-10-15", "event_type": "http-scan", "hits": 17, "ip": "127.0.0.1", "kind": "ip"}
 {"day": "2026-10-15", "event_type": "http-scan", "hits": 1, "ip": "13.218.231.196", "kind": "ip"}
 {"day": "2026-10-15", "event_type": "ssh-probe", "hits": 1, "ip": "130.12.180.51", "kind": "ip"}
 {"day": "2026-10-15", "event_type": "ssh-post-auth", "hits": 1, "ip": "130.12.180.51", "kind": "ip"}
