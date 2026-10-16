@@ -10,21 +10,21 @@ Indicators of compromise observed on a self-hosted, internet-facing honeypot
 ## Current stats
 
 <!-- AUTO-STATS:START -->
-Updated: 2026-10-15T00:00:00Z
+Updated: 2026-10-16T00:00:00Z
 
-- Indicators: **9890** (IPv4 4632, IPv6 0, URL 51, SHA256 5207)
-- Status: 7326 active / 686 stale / 1878 expired
-- High-confidence blocklist (`feeds/blocklist-high.txt`): 1416 entries
+- Indicators: **10011** (IPv4 4742, IPv6 0, URL 51, SHA256 5218)
+- Status: 7329 active / 674 stale / 2008 expired
+- High-confidence blocklist (`feeds/blocklist-high.txt`): 1443 entries
 - Research scanners (separate list, do **not** block): 14
 
 <details><summary>By event type</summary>
 
 | event_type | count | severity | confidence | TTL(days) |
 |---|---|---|---|---|
-| unknown-artifact | 5207 | medium | 30 | 365 |
-| ssh-probe | 1654 | low | 20 | 7 |
-| http-scan | 1549 | low | 30 | 14 |
-| ssh-post-auth | 1367 | high | 90 | 90 |
+| unknown-artifact | 5218 | medium | 30 | 365 |
+| ssh-probe | 1685 | low | 20 | 7 |
+| http-scan | 1599 | low | 30 | 14 |
+| ssh-post-auth | 1396 | high | 90 | 90 |
 | payload-url | 51 | high | 80 | 90 |
 | ssh-bruteforce | 43 | medium | 60 | 30 |
 | research-scanner | 14 | info | 90 | 90 |
