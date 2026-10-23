@@ -2,6 +2,10 @@
 
 Generated automatically from feed rebuilds. Newest first.
 
+## 2026-10-23
+
+-72 expired
+
 ## 2026-10-22
 
 -131 expired
