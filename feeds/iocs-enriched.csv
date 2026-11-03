@@ -3378,7 +3378,7 @@ http://31.56.209.73:32461/s/kswpad,url,payload-url,high,80,active,2026-10-12,202
 44adc2a3376e0b07b0e45ccdc7840c946e5b9014ec2fcb56fc3e8e249ff8ce6e,sha256,unknown-artifact,medium,30,active,2026-10-10,2026-10-10,2,,,,
 45.130.203.210,ip,http-scan,low,30,expired,2026-10-03,2026-10-08,2,137409,"GSLNETWORKS-AS-AP - GSL Networks Pty LTD, AU",NL,
 45.130.203.244,ip,http-scan,low,30,expired,2026-10-08,2026-10-08,2,137409,"GSLNETWORKS-AS-AP - GSL Networks Pty LTD, AU",NL,
-45.131.155.102,ip,http-scan,low,30,expired,2026-10-10,2026-10-10,2,212512,"DETAI - Detai Prosperous Technologies Limited, GB",DE,
+45.131.155.102,ip,http-scan,low,30,expired,2026-10-10,2026-10-10,2,23959,"OWL-AS-AP - Owl Limited, VU",DE,
 45.136.117.21,ip,ssh-probe,low,20,expired,2026-10-11,2026-10-11,2,51765,"CREANOVA-AS - Oy Crea Nova Hosting Solution Ltd, FI",CY,
 45.138.12.16,ip,http-scan,low,30,expired,2026-10-07,2026-10-07,2,218785,"TC-DATACENTER - TC DATACENTER LIMITED, HK",LT,
 45.156.128.156,ip,research-scanner,info,90,active,2026-10-08,2026-10-08,2,211680,"AS-BITSIGHT - NSEC - Sistemas Informaticos, S.A., PT",PT,
