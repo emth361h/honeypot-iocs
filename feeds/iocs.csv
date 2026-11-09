@@ -3,11 +3,11 @@ indicator,type,event_type,severity,confidence,status,first_seen,last_seen,hits
 109.160.32.30,ip,ssh-post-auth,high,90,active,2026-09-15,2026-09-26,45205
 109.160.32.119,ip,ssh-post-auth,high,90,active,2026-10-08,2026-10-11,42431
 109.160.32.159,ip,ssh-post-auth,high,90,active,2026-10-03,2026-10-11,41977
-109.160.32.28,ip,ssh-post-auth,high,90,active,2026-09-14,2026-09-25,39163
+109.160.32.28,ip,ssh-post-auth,high,90,stale,2026-09-14,2026-09-25,39163
 109.160.32.124,ip,ssh-post-auth,high,90,active,2026-09-30,2026-10-09,39084
 109.160.32.25,ip,ssh-post-auth,high,90,stale,2026-09-22,2026-09-22,35240
 45.142.193.164,ip,ssh-post-auth,high,90,stale,2026-09-13,2026-09-13,33273
-109.160.32.156,ip,ssh-post-auth,high,90,active,2026-09-25,2026-09-25,32718
+109.160.32.156,ip,ssh-post-auth,high,90,stale,2026-09-25,2026-09-25,32718
 109.160.32.167,ip,ssh-post-auth,high,90,active,2026-09-30,2026-10-07,30461
 109.160.32.111,ip,ssh-post-auth,high,90,stale,2026-09-23,2026-09-24,29104
 109.160.32.43,ip,ssh-post-auth,high,90,active,2026-09-11,2026-10-02,28029
@@ -80,7 +80,7 @@ indicator,type,event_type,severity,confidence,status,first_seen,last_seen,hits
 109.160.32.170,ip,ssh-post-auth,high,90,active,2026-10-07,2026-10-07,5546
 2.57.122.53,ip,ssh-post-auth,high,90,active,2026-09-10,2026-10-11,5431
 179.184.27.20,ip,ssh-post-auth,high,90,active,2026-10-07,2026-10-08,5381
-195.178.110.218,ip,ssh-post-auth,high,90,active,2026-09-24,2026-09-25,5370
+195.178.110.218,ip,ssh-post-auth,high,90,stale,2026-09-24,2026-09-25,5370
 92.118.39.77,ip,ssh-post-auth,high,90,active,2026-09-14,2026-10-16,5348
 195.178.110.227,ip,ssh-post-auth,high,90,active,2026-09-22,2026-10-14,5187
 92.118.39.14,ip,ssh-post-auth,high,90,active,2026-09-24,2026-10-15,5046
@@ -282,7 +282,7 @@ http://5.189.149.171/f/brute/m/.16_,url,payload-url,high,80,active,2026-09-14,20
 220.81.70.146,ip,ssh-post-auth,high,90,active,2026-09-23,2026-10-14,132
 164.92.219.202,ip,ssh-post-auth,high,90,active,2026-10-09,2026-10-14,130
 45.80.253.222,ip,ssh-post-auth,high,90,active,2026-10-04,2026-10-14,130
-23.94.28.169,ip,ssh-post-auth,high,90,active,2026-09-23,2026-09-25,128
+23.94.28.169,ip,ssh-post-auth,high,90,stale,2026-09-23,2026-09-25,128
 195.178.110.132,ip,http-scan,low,30,expired,2026-10-10,2026-10-10,127
 192.42.116.53,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-10,126
 91.92.242.37,ip,http-scan,low,30,expired,2026-09-29,2026-09-29,126
@@ -546,7 +546,7 @@ http://213.232.114.14/nokillbins/handshakebins.sh,url,payload-url,high,80,active
 102.204.54.22,ip,ssh-post-auth,high,90,active,2026-10-11,2026-10-11,28
 148.113.246.168,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-10,28
 161.132.4.157,ip,ssh-post-auth,high,90,active,2026-10-03,2026-10-09,28
-37.120.173.165,ip,ssh-post-auth,high,90,active,2026-09-25,2026-09-25,28
+37.120.173.165,ip,ssh-post-auth,high,90,stale,2026-09-25,2026-09-25,28
 43.165.190.208,ip,ssh-post-auth,high,90,active,2026-10-03,2026-10-10,28
 5.227.118.140,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-10,28
 50.80.127.207,ip,ssh-post-auth,high,90,active,2026-10-14,2026-10-14,28
@@ -598,14 +598,14 @@ http://213.232.114.14/nokillbins/handshakebins.sh,url,payload-url,high,80,active
 168.167.228.123,ip,ssh-post-auth,high,90,active,2026-10-07,2026-10-12,24
 171.244.39.95,ip,ssh-post-auth,high,90,active,2026-10-08,2026-10-09,24
 172.191.239.155,ip,ssh-post-auth,high,90,active,2026-10-07,2026-10-14,24
-173.80.66.79,ip,ssh-post-auth,high,90,active,2026-09-25,2026-09-25,24
+173.80.66.79,ip,ssh-post-auth,high,90,stale,2026-09-25,2026-09-25,24
 177.136.224.34,ip,ssh-post-auth,high,90,active,2026-10-03,2026-10-08,24
 177.8.166.2,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-13,24
 182.76.115.214,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-15,24
 182.8.179.208,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-10,24
 185.164.81.156,ip,ssh-post-auth,high,90,active,2026-10-04,2026-10-04,24
 185.191.236.38,ip,http-scan,low,30,expired,2026-10-07,2026-10-15,24
-188.227.111.138,ip,ssh-post-auth,high,90,active,2026-09-25,2026-09-25,24
+188.227.111.138,ip,ssh-post-auth,high,90,stale,2026-09-25,2026-09-25,24
 192.241.144.159,ip,ssh-post-auth,high,90,active,2026-10-11,2026-10-11,24
 20.96.179.87,ip,ssh-post-auth,high,90,active,2026-09-27,2026-10-10,24
 201.171.180.156,ip,ssh-post-auth,high,90,active,2026-10-06,2026-10-06,24
@@ -638,7 +638,7 @@ http://213.232.114.14/nokillbins/handshakebins.sh,url,payload-url,high,80,active
 180.75.127.56,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-10,22
 183.56.196.185,ip,ssh-post-auth,high,90,active,2026-10-15,2026-10-15,22
 221.151.84.6,ip,ssh-post-auth,high,90,active,2026-10-09,2026-10-09,22
-47.239.136.32,ip,ssh-post-auth,high,90,active,2026-09-25,2026-09-25,22
+47.239.136.32,ip,ssh-post-auth,high,90,stale,2026-09-25,2026-09-25,22
 62.60.130.253,ip,ssh-probe,low,20,expired,2026-09-14,2026-10-14,22
 78.153.140.50,ip,http-scan,low,30,expired,2026-10-03,2026-10-13,22
 90.227.116.37,ip,ssh-post-auth,high,90,active,2026-10-05,2026-10-15,22
@@ -1346,7 +1346,7 @@ http://45.88.91.135:35146/b/kswpad,url,payload-url,high,80,active,2026-09-13,202
 190.181.25.210,ip,ssh-post-auth,high,90,active,2026-10-08,2026-10-08,8
 191.54.253.47,ip,ssh-post-auth,high,90,stale,2026-09-23,2026-09-23,8
 191.9.117.14,ip,ssh-post-auth,high,90,stale,2026-09-23,2026-09-23,8
-192.42.116.102,ip,ssh-post-auth,high,90,active,2026-09-25,2026-09-25,8
+192.42.116.102,ip,ssh-post-auth,high,90,stale,2026-09-25,2026-09-25,8
 192.42.116.94,ip,ssh-post-auth,high,90,active,2026-10-10,2026-10-10,8
 193.138.195.128,ip,http-scan,low,30,expired,2026-09-27,2026-09-27,8
 195.239.40.213,ip,ssh-post-auth,high,90,active,2026-10-08,2026-10-08,8
@@ -1486,7 +1486,7 @@ http://45.88.91.135:35146/b/kswpad,url,payload-url,high,80,active,2026-09-13,202
 118.193.56.246,ip,http-scan,low,30,expired,2026-09-22,2026-09-22,7
 138.197.177.95,ip,http-scan,low,30,expired,2026-09-29,2026-09-29,7
 14.103.47.224,ip,ssh-post-auth,high,90,stale,2026-09-11,2026-09-11,7
-14.29.248.43,ip,ssh-bruteforce,medium,60,stale,2026-09-13,2026-10-10,7
+14.29.248.43,ip,ssh-bruteforce,medium,60,expired,2026-09-13,2026-10-10,7
 143.198.198.147,ip,http-scan,low,30,expired,2026-09-15,2026-09-15,7
 146.190.249.72,ip,http-scan,low,30,expired,2026-09-29,2026-09-29,7
 152.32.209.62,ip,http-scan,low,30,expired,2026-09-23,2026-09-23,7
@@ -1572,7 +1572,7 @@ http://45.88.91.135:35146/b/kswpad,url,payload-url,high,80,active,2026-09-13,202
 185.167.61.230,ip,http-scan,low,30,expired,2026-09-27,2026-09-27,6
 185.205.211.66,ip,ssh-post-auth,high,90,active,2026-10-03,2026-10-03,6
 185.220.101.100,ip,ssh-post-auth,high,90,active,2026-09-28,2026-09-28,6
-185.220.101.152,ip,ssh-post-auth,high,90,active,2026-09-25,2026-09-25,6
+185.220.101.152,ip,ssh-post-auth,high,90,stale,2026-09-25,2026-09-25,6
 185.9.184.157,ip,ssh-probe,low,20,expired,2026-09-10,2026-10-10,6
 185.94.132.207,ip,http-scan,low,30,expired,2026-09-28,2026-09-28,6
 188.32.210.218,ip,ssh-post-auth,high,90,stale,2026-09-24,2026-09-24,6
