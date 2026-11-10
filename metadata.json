@@ -1,5 +1,5 @@
 {
-  "active": 6455,
+  "active": 6409,
   "by_event_type": {
     "http-scan": 1599,
     "payload-url": 51,
@@ -16,7 +16,7 @@
   "ipv6": 0,
   "schema": "v2",
   "sha256": 5218,
-  "stale": 229,
-  "updated": "2026-11-09T23:59:59Z",
+  "stale": 275,
+  "updated": "2026-11-10T23:59:59Z",
   "url": 51
 }
