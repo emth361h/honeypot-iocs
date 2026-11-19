@@ -2,6 +2,10 @@
 
 Generated automatically from feed rebuilds. Newest first.
 
+## 2026-11-19
+
++144 IPv4/v6, +3607 SHA256, +31 reactivated
+
 ## 2026-11-18
 
 -56 expired

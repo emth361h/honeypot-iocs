@@ -1,22 +1,22 @@
 {
-  "active": 21142,
+  "active": 24936,
   "by_event_type": {
-    "http-scan": 3330,
+    "http-scan": 3367,
     "payload-url": 60,
     "research-scanner": 40,
-    "ssh-bruteforce": 41,
+    "ssh-bruteforce": 40,
     "ssh-malware-drop": 5,
-    "ssh-post-auth": 4497,
-    "ssh-probe": 3142,
-    "unknown-artifact": 16307
+    "ssh-post-auth": 4551,
+    "ssh-probe": 3196,
+    "unknown-artifact": 19914
   },
-  "expired": 5028,
-  "indicators": 27422,
-  "ipv4": 11055,
+  "expired": 4997,
+  "indicators": 31173,
+  "ipv4": 11199,
   "ipv6": 0,
   "schema": "v2",
-  "sha256": 16307,
-  "stale": 1252,
-  "updated": "2026-11-18T23:59:59Z",
+  "sha256": 19914,
+  "stale": 1240,
+  "updated": "2026-11-19T00:00:00Z",
   "url": 60
 }
