@@ -10,24 +10,24 @@ Indicators of compromise observed on a self-hosted, internet-facing honeypot
 ## Current stats
 
 <!-- AUTO-STATS:START -->
-Updated: 2026-11-21T23:59:59Z
+Updated: 2026-11-22T00:00:00Z
 
-- Indicators: **32569** (IPv4 11434, IPv6 0, URL 60, SHA256 21075)
-- Status: 25929 active / 1374 stale / 5266 expired
-- High-confidence blocklist (`feeds/blocklist-high.txt`): 4492 entries
-- Research scanners (separate list, do **not** block): 42
+- Indicators: **32969** (IPv4 11596, IPv6 0, URL 64, SHA256 21309)
+- Status: 26381 active / 1351 stale / 5237 expired
+- High-confidence blocklist (`feeds/blocklist-high.txt`): 4522 entries
+- Research scanners (separate list, do **not** block): 43
 
 <details><summary>By event type</summary>
 
 | event_type | count | severity | confidence | TTL(days) |
 |---|---|---|---|---|
-| unknown-artifact | 21075 | medium | 30 | 365 |
-| ssh-post-auth | 4599 | high | 90 | 90 |
-| http-scan | 3476 | low | 30 | 14 |
-| ssh-probe | 3273 | low | 20 | 7 |
-| payload-url | 60 | high | 80 | 90 |
-| research-scanner | 42 | info | 90 | 90 |
-| ssh-bruteforce | 39 | medium | 60 | 30 |
+| unknown-artifact | 21309 | medium | 30 | 365 |
+| ssh-post-auth | 4625 | high | 90 | 90 |
+| http-scan | 3529 | low | 30 | 14 |
+| ssh-probe | 3354 | low | 20 | 7 |
+| payload-url | 64 | high | 80 | 90 |
+| research-scanner | 43 | info | 90 | 90 |
+| ssh-bruteforce | 40 | medium | 60 | 30 |
 | ssh-malware-drop | 5 | critical | 100 | 180 |
 </details>
 <!-- AUTO-STATS:END -->
