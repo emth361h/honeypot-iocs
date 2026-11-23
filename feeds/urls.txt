@@ -21,9 +21,10 @@ http://31.56.209.73:32461/s/amd64
 http://31.56.209.73:32461/s/kal64
 https://brightdata.com/static/earnapp/install.sh
 http://31.56.209.73:32461/s/kswpad
-http://147.79.62.90/cat.sh
 http://151.244.234.24:65133/s/amd64
 http://151.244.234.24:65133/s/kal64
+http://147.79.62.90/cat.sh
+http://151.244.234.24:65133/s/kswpad
 http://31.56.209.73:32461/b/linux
 http://45.88.91.135:35146/b/linux
 http://31.56.209.73:65161/s/amd64
@@ -36,7 +37,6 @@ http://194.59.30.147:15653/s/kswpad
 http://147.79.62.90/
 http://31.56.209.73:32461/s/linux
 https://217.60.102.5/sh
-http://151.244.234.24:65133/s/kswpad
 http://194.59.31.231:51346/b/amd64
 http://194.59.31.231:51346/b/kal64
 http://194.59.31.231:51346/b/kswpad
