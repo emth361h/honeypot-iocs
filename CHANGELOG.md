@@ -2,6 +2,10 @@
 
 Generated automatically from feed rebuilds. Newest first.
 
+## 2026-11-25
+
++127 IPv4/v6, +37 reactivated
+
 ## 2026-11-24
 
 -154 expired
