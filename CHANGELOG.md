@@ -4,7 +4,7 @@ Generated automatically from feed rebuilds. Newest first.
 
 ## 2026-11-28
 
-+174 IPv4/v6, +403 SHA256, +28 reactivated
+-170 expired
 
 ## 2026-11-27
 
