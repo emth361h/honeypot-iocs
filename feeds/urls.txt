@@ -35,6 +35,7 @@ http://194.59.30.147:15653/s/amd64
 http://194.59.30.147:15653/s/kal64
 http://194.59.30.147:15653/s/kswpad
 http://upx.sf.net
+http://www.google.com/setup.sh
 http://147.79.62.90/
 http://31.56.209.73:32461/s/linux
 https://217.60.102.5/sh
@@ -50,7 +51,6 @@ http://31.56.209.73:65161/b/amd64
 http://31.56.209.73:65161/b/kal64
 http://31.56.209.73:65161/b/kswpad
 http://45.88.91.135:35146/s/linux
-http://www.google.com/setup.sh
 http://193.161.193.99:53112/w.sh
 http://83.168.69.95/aarch64
 http://83.168.69.95/armv4l
